@@ -122,7 +122,14 @@ export function SignIn() {
             <a href="#" className="block hover:underline">
               Esqueci minha senha
             </a>
-            <a href="#" className="block hover:underline mt-0.5">
+            <a
+              href="#"
+              className="block hover:underline mt-0.5"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("/sign-up");
+              }}
+            >
               Criar conta
             </a>
           </div>
